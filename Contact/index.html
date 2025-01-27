@@ -151,26 +151,29 @@ html {
                 </div>
                 <div class="col-md-7">
                     <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <!-- <div id="success"></div> -->
+                         
+    
+                        <form id="contactForm" novalidate="novalidate"  action="https://api.web3forms.com/submit" method="POST">
                             <div class="control-group">
+                                <input type="hidden" name="access_key" value="f102ed77-72a0-4a0f-969e-2a9aea8a757b">
                                 <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
+                                    required="required" data-validation-required-message="Please enter your name" name="name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                    required="required" data-validation-required-message="Please enter your email" name="email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                    required="required" data-validation-required-message="Please enter a subject" name="subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <textarea class="form-control" id="message" placeholder="Message" required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                    data-validation-required-message="Please enter your message" name="message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -223,10 +226,11 @@ html {
                         <p>
                             Whether you need assistance with day-to-day bookkeeping or complex tax planning updates, Ayyubi Accountants is here to help. Subscribe now to discuss how our services can be tailored to meet your specific business needs.
                         </p>
-                        <div class="form">
-                            <input class="form-control" placeholder="Email goes here">
+                        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                             <input type="hidden" name="access_key" value="f102ed77-72a0-4a0f-969e-2a9aea8a757b">
+                            <input class="form-control" placeholder="Email goes here" name="Newsletter" type="Newsletter" required>
                             <button class="btn">Submit</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
